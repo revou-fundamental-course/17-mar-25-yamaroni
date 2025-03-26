@@ -19,7 +19,7 @@ main {
 
 .nav-fitur {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .nav-fitur>a {
@@ -55,6 +55,7 @@ main {
 .calculate-content {
     border: 1px solid;
     height: 300px;
+    align-content: center;
 }
 
 section {
@@ -64,4 +65,12 @@ section {
 
 footer {
     text-align: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 400px) {
+    .nav-fitur {
+        display: flex;
+        flex-direction: column;
+    }
 }

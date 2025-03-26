@@ -44,7 +44,17 @@
             <div class="section-image"></div>
 
             <!-- Konten Perhitungan -->
-            <div class="calculate-content"></div>
+            <div class="calculate-content">
+                <form>
+                    <div>
+                        <label for="sisi-input">Sisi</label>
+                        <!-- Mandatory to Fill -->
+                        <input type="number" name="sisi" id="sisi-input" required>
+                    </div>
+
+                    <button type="button" onclick="validateForm()">Hitung</button>
+                </form>
+            </div>
         </section>
 
         <!-- Section Keliling -->
@@ -65,6 +75,9 @@
     <footer>
         <p>Made by Yama@2025</p>
     </footer>
+
+    <!-- JS External -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
